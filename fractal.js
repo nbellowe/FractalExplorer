@@ -1,3 +1,12 @@
+(function (d, script) {
+    script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function () {
+    };
+    script.src = 'http://www.google-analytics.com/ga.js';
+    d.getElementsByTagName('head')[0].appendChild(script);
+}(document));
 function makeSlideInput(id, callbackOnChange, min, max) {
     var el = document.getElementById(id);
     if (!el) {
@@ -215,4 +224,3 @@ var Renderer = (function () {
     };
     return Renderer;
 })();
-new Renderer;

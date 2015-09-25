@@ -1,3 +1,14 @@
+(function(d, script) {
+    script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function(){
+        // remote script has loaded
+    };
+    script.src = 'http://www.google-analytics.com/ga.js';
+    d.getElementsByTagName('head')[0].appendChild(script);
+}(document));
+
 function makeSlideInput(id, callbackOnChange, min, max) {
     var el: any = document.getElementById(id)
     if (!el) {
@@ -344,4 +355,3 @@ class WebGLFractal {
         return null;
     }
 }*/
-new Renderer;
